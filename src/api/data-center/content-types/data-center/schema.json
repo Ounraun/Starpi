@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "data_centers",
+  "info": {
+    "singularName": "data-center",
+    "pluralName": "data-centers",
+    "displayName": "Data center"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.content-card",
+      "repeatable": true
+    }
+  }
+}

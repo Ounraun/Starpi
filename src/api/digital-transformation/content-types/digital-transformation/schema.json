@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "digital_transformations",
+  "info": {
+    "singularName": "digital-transformation",
+    "pluralName": "digital-transformations",
+    "displayName": "Digital transformation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.content-card",
+      "repeatable": true
+    }
+  }
+}

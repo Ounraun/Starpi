@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "centralize_managements",
+  "info": {
+    "singularName": "centralize-management",
+    "pluralName": "centralize-managements",
+    "displayName": "Centralize management"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "mainSubTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.content-card",
+      "repeatable": true
+    }
+  }
+}

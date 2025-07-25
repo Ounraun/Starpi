@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_paricipant_emails",
+  "info": {
+    "displayName": "Email"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    }
+  },
+  "config": {}
+}
