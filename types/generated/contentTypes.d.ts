@@ -658,7 +658,7 @@ export interface ApiCentralizeManagementCentralizeManagement
       'oneToMany',
       'api::centralize-management.centralize-management'
     >;
-    mainSubTitle: Schema.Attribute.String &
+    mainSubTitle: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
