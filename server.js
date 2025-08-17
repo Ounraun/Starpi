@@ -55,7 +55,14 @@ log('[BOOT] starting Strapi', 'PORT=', process.env.PORT, 'HOST=', process.env.HO
       (mod && typeof mod.default === 'function') ? mod.default : null;
     if (!factory) throw new Error('Unsupported @strapi/strapi module shape');
 
-    const app = await factory();
+  const distDir = path.join(__dirname, 'dist');
+if (!fs.existsSync(distDir)) {
+  log('[BOOT_ERROR] dist/ not found, did you run `npm run build`?');
+  process.exit(1);
+}
+log('[STEP2.1] using project dir:', distDir);
+const app = await factory({ dir: distDir });
+
     log('[STEP3] instance created');
 
     const cfg = app.config.get('server');
