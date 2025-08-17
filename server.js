@@ -1,3 +1,6 @@
+// --- add this at the very top ---
+try { require('ts-node/register/transpile-only'); } catch (e) { /* ok if not installed */ }
+// ---------------------------------
 // server.js (Application Startup File)
 const fs = require('fs');
 const path = require('path');
