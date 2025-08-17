@@ -64,6 +64,7 @@ if (!fs.existsSync(distDir)) {
   process.exit(1);
 }
 log('[STEP2.1] using project dir:', distDir);
+process.chdir(distDir);
 const app = await factory({ dir: distDir });
 
     log('[STEP3] instance created');
