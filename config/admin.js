@@ -18,4 +18,6 @@ module.exports = ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+    path: env('ADMIN_PATH', '/admin'),
+    serveAdminPanel: true,
 });
