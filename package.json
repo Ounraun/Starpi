@@ -14,6 +14,8 @@
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
     "clean": "node scripts/clean.js",
+    "postbuild": "node scripts/postbuild-copy-admin.js",
+    "rebuild": "npm run clean && npm run build",
     "check:admin": "node scripts/check-admin.js"
   },
   "dependencies": {
