@@ -13,7 +13,8 @@
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
-    "clean": "node scripts/clean.js"
+    "clean": "node scripts/clean.js",
+    "check:admin": "node scripts/check-admin.js"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.18.0",
